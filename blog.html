@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>Software Company Tutorial</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+<body>
+   <section class="sub-header">
+     <nav>
+        <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="services.html">SERVICE</a></li>
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+     </nav>
+    <h1>The Future of Technology</h1>
+   </section>
+<!---blog-->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/handshake-8814136_1280.jpg" alt="">
+            <p>Welcome to the Rams-Tech Solutions Blog, your friendly source for the latest in technology and engineering.<br>
+                 At Rams-Tech, we believe that innovation thrives in an environment of collaboration and openness.<br>
+                  That’s why our blog isn’t just about sharing industry insights—it’s about building a community where clients and
+                   tech enthusiasts alike can come together to explore new ideas and solutions.<br>
+                    Whether you’re looking for expert tips, project inspiration, or just want to stay informed about the latest trends,
+               you’ll find it here. We’re not just a service provider; we’re your partners in navigating the ever-evolving tech landscape, <br>
+              always ready to support and guide you every step of the way. <br>
+                Let’s innovate together</p>
+                <br>
+                <p>we’re more than just a technology service provider—we’re your partners in innovation. Our blog is a reflection of our commitment to
+                     fostering a community where ideas are shared, and collaboration is key. We believe that technology should be accessible and
+                      understandable, which is why we strive to make our content engaging and approachable for everyone. Whether you’re looking for the
+                       latest trends, seeking inspiration for your next project, or simply wanting to connect with fellow tech enthusiasts, our blog is the place to be. Together,
+                     we’ll explore new possibilities and bring your visions to life with a friendly and supportive touch</p>
+                     <br>
+                     <p>we understand that technology can sometimes feel overwhelming,
+                         but we’re here to make it simple and accessible. Our blog is crafted with you in mind—whether you’re tackling a 
+                         complex project or just curious about the latest tech trends, we’ve got you covered. We pride ourselves on being 
+                         approachable and down-to-earth, breaking down complex concepts into easy-to-understand insights. Our goal is to 
+                         empower you with the knowledge and tools you need to make informed decisions and achieve your goals. Let’s embark on 
+                         this tech journey together,
+                         with Rams-Tech as your reliable and friendly guide.</p>
+
+        <div class="comment-box">
+
+            <h3>Leave A Comment</h3>
+            <form class="comment-form">
+                <input type="text" placeholder="Enter name">
+                <input type="email" placeholder="Enter email">
+                <textarea rows="5" placeholder="Your comment"></textarea>
+<button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+
+            </form>
+        </div>  
+                         
+
+        </div>
+        <div class="blog-right">
+          <h3>Categories</h3>
+          <div>
+            <span>Client Success Stories</span>
+            <span>25</span>
+
+          </div>
+          <div>
+            <span>Expert Tips & Tutorials</span>
+            <span>16</span>
+
+          </div>
+
+          <div>
+            <span>Project Inspiration & Ideas</span>
+            <span>46</span>
+
+          </div>
+          <div>
+            <span>Product & Service Updates</span>
+            <span>46</span>
+
+          </div>
+          
+        </div>
+        
+
+    </div>
+
+</section>
+   
+  
+
+
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Rams-Tech Solutions is your trusted partner in delivering advanced technology solutions.<br>
+         We specialize in cutting-edge software and IT services designed to empower businesses and drive success.<br>
+          Our team is committed to innovation, quality, and customer satisfaction, ensuring that every project meets the highest standards.<br>
+         Let us help you navigate the digital landscape with solutions tailored to your unique needs</p>
+         <div class ="icons">
+            <i class="fab fa-facebook" ></i>
+            <i class="fab fa-twitter" ></i>
+            <i class="fab fa-instagram" ></i>
+            <i class="fab fa-linkedin" ></i>
+         </div>
+         <p>Made with <i class="far fa-heart"></i> By Rams </p>
+
+</section>
+
+
+
+
+
+
+  <!--------------javaScript for toggle menu-------->
+   <script>
+    var navLinks =document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+   </script>
+</body>
+</html>

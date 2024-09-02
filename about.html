@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>Software Company Tutorial</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+<body>
+   <section class="sub-header">
+     <nav>
+        <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="services.html">SERVICE</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+     </nav>
+    <h1>About Us</h1>
+   </section>
+
+   <!-------about us content-->
+
+   <section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>About Rams-Tech Solutions</h1>
+            <p>At Rams-Tech Solutions, we are passionate about driving innovation and providing cutting-edge engineering services.<br>
+                 Our team of experts is dedicated to delivering customized solutions that meet the unique needs of our clients. <br>
+                 From system support and mobile/web application development to website creation and animation design,<br>
+                  we are committed to excellence in every project we undertake. With a focus on advanced technology,<br>
+                 we aim to be your trusted partner in transforming ideas into impactful solutions that contribute to a better and more efficient world</p>
+                <a href="" class="hero-btn red-btn" >EXPLORE US NOW </a>
+        </div>
+        <div class="about-col">
+            <img src="images/office-7853103_1280.jpg" alt="">
+        </div>
+    </div>
+
+
+   </section>
+
+
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Rams-Tech Solutions is your trusted partner in delivering advanced technology solutions.<br>
+         We specialize in cutting-edge software and IT services designed to empower businesses and drive success.<br>
+          Our team is committed to innovation, quality, and customer satisfaction, ensuring that every project meets the highest standards.<br>
+         Let us help you navigate the digital landscape with solutions tailored to your unique needs</p>
+         <div class ="icons">
+            <i class="fab fa-facebook" ></i>
+            <i class="fab fa-twitter" ></i>
+            <i class="fab fa-instagram" ></i>
+            <i class="fab fa-linkedin" ></i>
+         </div>
+         <p>Made with <i class="far fa-heart"></i> By Rams </p>
+
+</section>
+
+
+
+
+
+
+  <!--------------javaScript for toggle menu-------->
+   <script>
+    var navLinks =document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+   </script>
+</body>
+</html>
