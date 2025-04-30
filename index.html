@@ -2,7 +2,7 @@
 <html>
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   <title>Software Company Tutorial</title>
+   <title>My portfolio website</title>
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -13,15 +13,15 @@
 <body>
    <section class="header">
      <nav>
-        <a href="index.html"><img src="images/logo.png" class="logo"></a>
+        <a href="index.html"><img src="images/logo 1.png" class="logo"></a>
         <div class="nav-links" id="navLinks">
             <i class="fas fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="services.html">SERVICE</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="blog.html">PORTIFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
         <i class="fas fa-bars" onclick="showMenu()"></i>
@@ -35,87 +35,105 @@
      </div>
    </section>
 
-   <!------------ services ----->
+   <!-- -------about------------------- -->
+   <section>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.JPG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m Radzilani Mpho, a Front-End Developer and Designer with a passion for creating clean, 
+                        user-friendly websites and applications. 
+                        I specialize in HTML, CSS, JavaScript, React, and Tailwind CSS, 
+                        along with design tools like Figma.
+                        I focus on blending functionality with great design to deliver seamless user experiences.
+                         Always eager to learn and grow,
+                         I’m committed to bringing innovative ideas to life.
+                    </p>
+                    <div class="tab-titles">
+                       <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
+                       <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                       <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                       <ul>
+                        <li><span>UI/UX</span><br>Designing web/app interfaces 
+                            <br>with a focus on user experience</li>
+                        <li><span>Web Development</span><br>web app Development</li>
+                        <li><span>App Development</span><br>building android/ios apps</li>
+                    </ul> 
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                         <li><span>Aug 2024 - current</span><br>front end developer intern at unitac solutions</li>
+                         <li><span>2023 - 2025</span><br>Freelance Front-End Developer & Designer</li>
+                         <li><span>Ongoing</span><br>Personal Projects</li>
+                     </ul> 
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                         <li><span>Expected Graduation: 2025</span><br>dip in multimedia computing (tswane university of technoloy)</li>
+                         <li><span>2020</span><br>National certificate:IT end user computing</li>
+                     </ul> 
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- ----------------services------------------ -->
 
-<section class="services">
- <h1>Our Services</h1>
- <p> We offer a range of advanced technology solutions to meet the varied needs of today’s businesses.<br> As your trusted technology partner,<br> we are committed to providing innovative and effective solutions that help you succeed</p>
+<section>
+    <div id="services">
+     <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <img src="images/animation.jpg" alt="">
+            <h2>Web/App design</h2>
+            <p>user-friendly web and app designs that look great and work smoothly on all devices.
+                 I focus on making sure your design is easy to use and matches your brand</p>
+                 <a href="">Learn more</a>
+          </div>  
+          <div>
+            <img src="images/webdev.jpg" alt="">
+            <h2>website development</h2>
+            <p>I offer custom website development services, building fast,
+                 responsive, and scalable websites tailored to your needs.
+                 I ensure your site is user-friendly</p>
+                 <a href="">Learn more</a>
+          </div>
+          <div>
+            <img src="images/application.jpg" alt="">
+          <h2>custom web and mobile applications</h2>
+          <p>I develop custom web and mobile applications tailored to your business needs,
+             ensuring a seamless user experience across all platforms. 
+             From responsive websites to interactive mobile apps</p>
+               <a href="">Learn more</a>
+        </div>
+        </div>
 
- <div class="row">
-<div class ="service-col">
-    <img src="images/systemsupport.jpg" alt="">
-    <h3>System Support</h3>
-    <p>We provide end-to-end system support, including troubleshooting, optimization,installing windows 
-        and upgrades to keep your technology running at its best</p>
-</div>
-<div class ="service-col">
-    <img src="images/webdev.jpg" alt="">
-    <h3>Website Development</h3>
-    <p>Our team designs and develops professional websites that are visually appealing,
-         responsive, and optimized for performance and SEO</p>
-</div>
-<div class ="service-col">
-    <img src="images/application.jpg" alt="">
-    <h3>Custom Mobile and Web Applications</h3>
-    <p>We develop custom mobile and web applications tailored to your business needs,
-         ensuring high performance and user-friendly experiences</p>
-</div>
-<div class ="service-col">
-    <img src="images/animation.jpg" alt="">
-    <h3>Designing Animation</h3>
-    <p>WeWe specialize in creating engaging animations that bring your ideas to life. Whether it's for a website, application,
-         or marketing campaign, our animations are designed to captivate and communicate your
-          message effectively</p>
-</div>
-
- </div> 
+     </div>   
+    </div>
 </section>
 
 
 
-<!----testimonials--->
+<!----PORTIFOLIO--->
 
 <section class="testimonials">
-<h1>What Our Clients Says</h1>
-<p>Our clients trust Rams-Tech Solutions for innovative solutions and exceptional service. 
-    Here’s what they have to say about working with us</p>
+<h1>MY PORTIFOLIO</h1>
 
-    <div class="row">
-        <div class="testimonials-col">
-        <img src="images/face1.jpg" alt="">
-        <div>
-            <p>The custom solutions from Rams-Tech Solutions have streamlined our processes and increased efficiency across the board<br>
-                . We couldn’t be happier with the results!</p>
-                <h3>Sarah M</h3>
-                <i class="fas fa-star" ></i>
-                <i class="fas fa-star" ></i>
-                <i class="fas fa-star-o" i>
-                <i class="fas fa-star-o" i>
-                
-        </div>
-        </div>
-        <div class="testimonials-col">
-            <img src="images/face2.jpg" alt="">
-            <div>
-                <p>Rams-Tech Solutions transformed our business with their cutting-edge software.<br>
-                     Their team was professional, responsive, and truly understood our needs</p>
-                    <h3>Rangolo mutsinga</h3>
-                <i class="fas fa-star" ></i>
-                <i class="fas fa-star" ></i>
-                <i class="fas fa-star" ></i>
-                <i class="fas fa-star" ></i>
-                <i class="fas fa-star-half-o" i>
-            </div>
-            </div>
-           
-    </div>
 </section>
 
 <!-----call to Action-->
 
 <section class="cta">
 <h1>Ready to Transform Your Business?</h1>
-<a href="" class="hero-btn">CONTACT US</a>
+<a href="" class="hero-btn">CONTACT </a>
 </section>
 
 
@@ -123,11 +141,6 @@
 <!---Footer-->
 
 <section class="footer">
-    <h4>ABOUT US</h4>
-    <p>Rams-Tech Solutions is your trusted partner in delivering advanced technology solutions.<br>
-         We specialize in cutting-edge software and IT services designed to empower businesses and drive success.<br>
-          Our team is committed to innovation, quality, and customer satisfaction, ensuring that every project meets the highest standards.<br>
-         Let us help you navigate the digital landscape with solutions tailored to your unique needs</p>
          <div class ="icons">
             <i class="fab fa-facebook" ></i>
             <i class="fab fa-twitter" ></i>
@@ -143,7 +156,7 @@
 
 
 
-  <!--------------javaScript for toggle menu-------->
+  <!--------------javaScript -------->
    <script>
     var navLinks =document.getElementById("navLinks");
     function showMenu(){
@@ -152,6 +165,21 @@
     function hideMenu(){
         navLinks.style.right = "-200px";
     }
+
+    var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+ 
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
    </script>
 </body>
 </html>
